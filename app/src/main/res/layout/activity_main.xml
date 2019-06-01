@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_score_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/view_center"
+            android:text="0"/>
+        <View
+            android:id="@+id/view_center"
+            android:layout_width="0.1dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/tv_score_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:layout_toRightOf="@id/view_center"/>
+
+        <Button
+            android:id="@+id/btn_player_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A + 1"
+            android:layout_below="@id/tv_score_a"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/view_center"/>
+
+        <Button
+            android:id="@+id/btn_player_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B + 1"
+            android:layout_below="@id/tv_score_a"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/view_center"/>
+
+        <Button
+            android:id="@+id/btn_user_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户界面"
+            android:layout_below="@id/btn_player_b"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/view_center"/>
+
+    </RelativeLayout>
+
+</layout>
